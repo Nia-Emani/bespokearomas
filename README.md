@@ -12,7 +12,7 @@ _The **Bespoke Aromas** MVP will include the following elements:_
 
 ### Goals
 
-- _Ruby n Rails server (Back End) with a restful JSON API_
+- _Ruby on Rails server (Back End) with a restful JSON API_
 - _Database with 3 tables, with one association between them_
 - _Full CRUD between non-User tables_
 - _React app (Front End) with 8 rendered components and Full CRUD actions_
@@ -91,11 +91,15 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
+| Create Back End     |    H     |     8 hrs      |     0 hrs     |    0 hrs    |
+| Create database and tables |    H     |     6 hrs      |     0 hrs     |     TBD     |
+| Setup React components    |    H     |     6 hrs      |     0 hrs     |    0 hrs    |
+| Create CRUD Actions |    H     |     8 hrs      |     0 hrs     |     TBD     |
+| Adding screen content    |    H     |     6 hrs      |     0 hrs     |    0 hrs    |
+| CSS |    L     |     12 hrs      |     0 hrs     |     TBD     |
+| Debugging    |    H     |     10 hrs      |     0 hrs     |    0 hrs    |
+| TOTAL               |          |     56 hrs      |     3 hrs     |     TBD     |
 
-> _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
 
 <br>
 
@@ -109,8 +113,8 @@ src
 
 ## Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
-
+- Allow users to upload fragrances that are not already on the app
+- Allow users to comment on fragrances with a review
 ---
 
 ## Code Showcase
