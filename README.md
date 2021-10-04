@@ -1,6 +1,6 @@
 ## Overview
 
-_**Bespoke Aromas** is an app where users can share products and services that they love that make life feel a little more luxurious._
+_**Bespoke Aromas** is an app that allows users to rate their favorite luxury fragrances._
 
 <br>
 
@@ -28,7 +28,7 @@ _The **Bespoke Aromas** MVP will include the following elements:_
 | :--------------: | :----------------------------------------- |
 |      React       | _Lorem ipsum dolor sit amet, consectetur._ |
 |   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Ruby on Rails   | _Lorem ipsum dolor sit amet, consectetur._ |
+|  Ruby on Rails   | _Back End server_ |
 |     Express      | _Lorem ipsum dolor sit amet, consectetur._ |
 |  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
 
@@ -38,37 +38,24 @@ _The **Bespoke Aromas** MVP will include the following elements:_
 
 #### Wireframes
 
-> Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
 
-![Dummy Link](url)
+![Bespoke Aromas - 1 Home](https://user-images.githubusercontent.com/83891591/135919644-ccf072e4-dbb8-4f9e-b659-5032e9b7fe1f.png)
 
-- Desktop Landing
+![Bespoke Aromas - 2 Register](https://user-images.githubusercontent.com/83891591/135919949-2a3a356e-a628-4b52-ae69-dc2e2271eede.png)
 
-![Dummy Link](url)
+![Bespoke Aromas - 3 Login](https://user-images.githubusercontent.com/83891591/135920123-41be15b9-7747-4cda-8e4f-1270c8f617ba.png)
 
-- Desktop Hero
+![Bespoke Aromas - 4 Ratings](https://user-images.githubusercontent.com/83891591/135920235-c0469d73-b0e4-4f79-9b4e-7de90bd54a2b.png)
 
-![Dummy Link](url)
+![Bespoke Aromas - 5 RatingCreate](https://user-images.githubusercontent.com/83891591/135920266-547dda4f-9313-41ea-85a5-f805b589abbe.png)
 
-- Resource Index
+![Bespoke Aromas - 6 RatingEdit](https://user-images.githubusercontent.com/83891591/135920288-104a6104-32e4-4a01-a103-df8f1ff561e6.png)
 
-![Dummy Link](url)
 
-- Resource Show
-
-![Dummy Link](url)
-
-- Tablet Resource Index
-
-![Dummy Link](url)
-
-- Mobile Resource Index
 
 #### Component Tree
 
-> Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. Include a link to your component tree
-
-[Component Tree Sample](https://gist.git.generalassemb.ly/davidtwhitlatch/414107e2560ae0bb65e233570f2fe056#file-component-tree-png)
+![Bespoke Aromas - Component Tree drawio](https://user-images.githubusercontent.com/83891591/135920704-bfd3aaa7-6d31-4fbe-8f99-427075800065.png)
 
 #### Component Architecture
 
@@ -116,10 +103,7 @@ src
 
 #### ERD Model
 
-> Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
-
-[ERD Sample](https://drive.google.com/file/d/1kLyQTZqfcA4jjKWQexfEkG2UspyclK8Q/view)
-<br>
+![Bespoke Aromas - EDR drawio](https://user-images.githubusercontent.com/83891591/135920772-f2b075fe-7ac5-49bc-8371-2d3cd96a1b72.png)
 
 ---
 
