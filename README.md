@@ -39,9 +39,11 @@ _The **Bespoke Aromas** MVP will include the following elements:_
 
 ![Bespoke Aromas - 3 Login](https://user-images.githubusercontent.com/83891591/135920123-41be15b9-7747-4cda-8e4f-1270c8f617ba.png)
 
-![Bespoke Aromas - 4 Ratings](https://user-images.githubusercontent.com/83891591/135920235-c0469d73-b0e4-4f79-9b4e-7de90bd54a2b.png)
+![Bespoke Aromas - 4 Ratings](https://user-images.githubusercontent.com/83891591/135951990-fef48900-b1cc-4a00-a7d4-04a36cca35e2.png)
 
-![Bespoke Aromas - 5 RatingCreate](https://user-images.githubusercontent.com/83891591/135920266-547dda4f-9313-41ea-85a5-f805b589abbe.png)
+![Bespoke Aromas - 5 RatingCreate](https://user-images.githubusercontent.com/83891591/135952026-beac8040-690e-4aad-a5af-b156039a523e.png)
+
+![Bespoke Aromas - RatingDetail](https://user-images.githubusercontent.com/83891591/135951554-8f9ea5a8-a152-478b-97d0-d23046480ef9.png)
 
 ![Bespoke Aromas - 6 RatingEdit](https://user-images.githubusercontent.com/83891591/135920288-104a6104-32e4-4a01-a103-df8f1ff561e6.png)
 
@@ -49,7 +51,7 @@ _The **Bespoke Aromas** MVP will include the following elements:_
 
 #### Component Tree
 
-![Bespoke Aromas - Component Tree drawio](https://user-images.githubusercontent.com/83891591/135920704-bfd3aaa7-6d31-4fbe-8f99-427075800065.png)
+![Bespoke Aromas - Component Tree drawio](https://user-images.githubusercontent.com/83891591/136036323-d1e2c430-0e7e-4fc4-a5d6-34dbb4b3e7da.png)
 
 #### Component Architecture
 
@@ -64,12 +66,11 @@ src
       |__ Footer.jsx
 |__ screens/
       |__ Fragrances.jsx
-      |__ RatingCreate.jsx
+      |__ RatingNew.jsx
       |__ RatingEdit.jsx
-      |__ Ratings.jsx
+      |__ RatingDetail.jsx
       |__ Register.jsx
       |__ Login.jsx
-      |__ Footer
 |__ services/
       |__ auth.js
       |__ config.js
@@ -99,7 +100,7 @@ src
 
 #### ERD Model
 
-![Bespoke Aromas - EDR drawio](https://user-images.githubusercontent.com/83891591/135920772-f2b075fe-7ac5-49bc-8371-2d3cd96a1b72.png)
+![Bespoke Aromas - EDR drawio](https://user-images.githubusercontent.com/83891591/136056165-63b16edd-518c-42e3-92fd-13adb5b6ba3c.png)
 
 ---
 
