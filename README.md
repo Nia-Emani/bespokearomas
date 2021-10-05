@@ -18,20 +18,19 @@ _The **Bespoke Aromas** MVP will include the following elements:_
 
 ### Libraries and Dependencies
 
-|     Library      | Description                                |
-| :--------------: | :----------------------------------------- |
-|      React       | _Build user interface_ |
-|   React Router   | _Create components to navigate through the site_ |
-|  Ruby on Rails   | _Back End server_ |
-|     Express      | _Process handle requests_ |
-|  Express Router  | _Class that helps create router handlers_ |
+|    Library     | Description                                      |
+| :------------: | :----------------------------------------------- |
+|     React      | _Build user interface_                           |
+|  React Router  | _Create components to navigate through the site_ |
+| Ruby on Rails  | _Back End server_                                |
+|    Express     | _Process handle requests_                        |
+| Express Router | _Class that helps create router handlers_        |
 
 <br>
 
 ### Client (Front End)
 
 #### Wireframes
-
 
 ![Bespoke Aromas - 1 Home](https://user-images.githubusercontent.com/83891591/135919644-ccf072e4-dbb8-4f9e-b659-5032e9b7fe1f.png)
 
@@ -47,8 +46,6 @@ _The **Bespoke Aromas** MVP will include the following elements:_
 
 ![Bespoke Aromas - 6 RatingEdit](https://user-images.githubusercontent.com/83891591/135920288-104a6104-32e4-4a01-a103-df8f1ff561e6.png)
 
-
-
 #### Component Tree
 
 ![Bespoke Aromas - Component Tree drawio](https://user-images.githubusercontent.com/83891591/136036323-d1e2c430-0e7e-4fc4-a5d6-34dbb4b3e7da.png)
@@ -60,7 +57,7 @@ _The **Bespoke Aromas** MVP will include the following elements:_
 src
 |__ containers/
       |__ MainContainer.jsx
-|__ components/      
+|__ components/
       |__ Layout.jsx
       |__ Nav.jsx
       |__ Footer.jsx
@@ -82,17 +79,16 @@ src
 
 #### Time Estimates
 
-| Task                | Priority | Estimated Time | Time Invested | Actual Time |
-| ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Create Back End     |    H     |     8 hrs      |     0 hrs     |    0 hrs    |
+| Task                       | Priority | Estimated Time | Time Invested | Actual Time |
+| -------------------------- | :------: | :------------: | :-----------: | :---------: |
+| Create Back End            |    H     |     8 hrs      |     0 hrs     |    0 hrs    |
 | Create database and tables |    H     |     6 hrs      |     0 hrs     |     TBD     |
-| Setup React components    |    H     |     6 hrs      |     0 hrs     |    0 hrs    |
-| Create CRUD Actions |    H     |     8 hrs      |     0 hrs     |     TBD     |
-| Adding screen content    |    H     |     6 hrs      |     0 hrs     |    0 hrs    |
-| CSS |    L     |     12 hrs      |     0 hrs     |     TBD     |
-| Debugging    |    H     |     10 hrs      |     0 hrs     |    0 hrs    |
-| TOTAL               |          |     56 hrs      |     3 hrs     |     TBD     |
-
+| Setup React components     |    H     |     6 hrs      |     0 hrs     |    0 hrs    |
+| Create CRUD Actions        |    H     |     8 hrs      |     0 hrs     |     TBD     |
+| Adding screen content      |    H     |     6 hrs      |     0 hrs     |    0 hrs    |
+| CSS                        |    L     |     12 hrs     |     0 hrs     |     TBD     |
+| Debugging                  |    H     |     10 hrs     |     0 hrs     |    0 hrs    |
+| TOTAL                      |          |     56 hrs     |     3 hrs     |     TBD     |
 
 <br>
 
@@ -100,14 +96,13 @@ src
 
 #### ERD Model
 
-![Bespoke Aromas - EDR drawio](https://user-images.githubusercontent.com/83891591/136056165-63b16edd-518c-42e3-92fd-13adb5b6ba3c.png)
-
----
+## ![Bespoke Aromas - EDR drawio](https://user-images.githubusercontent.com/83891591/136074170-ea03c04e-bc94-4978-b57d-9c6b214f695f.png)
 
 ## Post-MVP
 
 - Allow users to upload fragrances that are not already on the app
 - Allow users to comment on fragrances with a review
+
 ---
 
 ## Code Showcase
