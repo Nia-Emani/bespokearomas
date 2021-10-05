@@ -66,12 +66,11 @@ src
       |__ Footer.jsx
 |__ screens/
       |__ Fragrances.jsx
-      |__ RatingCreate.jsx
+      |__ RatingNew.jsx
       |__ RatingEdit.jsx
-      |__ Ratings.jsx
+      |__ RatingDetail.jsx
       |__ Register.jsx
       |__ Login.jsx
-      |__ Footer
 |__ services/
       |__ auth.js
       |__ config.js
