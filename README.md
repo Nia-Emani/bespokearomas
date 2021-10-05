@@ -8,10 +8,6 @@ _**Bespoke Aromas** is an app that allows users to rate their favorite luxury fr
 
 _The **Bespoke Aromas** MVP will include the following elements:_
 
-<br>
-
-### Goals
-
 - _Ruby on Rails server (Back End) with a restful JSON API_
 - _Database with 3 tables, with one association between them_
 - _Full CRUD between non-User tables_
@@ -22,15 +18,13 @@ _The **Bespoke Aromas** MVP will include the following elements:_
 
 ### Libraries and Dependencies
 
-> Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
-
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
-|      React       | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
+|      React       | _Build user interface_ |
+|   React Router   | _Create components to navigate through the site_ |
 |  Ruby on Rails   | _Back End server_ |
-|     Express      | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
+|     Express      | _Process handle requests_ |
+|  Express Router  | _Class that helps create router handlers_ |
 
 <br>
 
@@ -86,8 +80,6 @@ src
 ```
 
 #### Time Estimates
-
-> Use this section to estimate the time necessary to build out each of the components you've described above.
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
