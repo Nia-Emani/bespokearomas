@@ -39,9 +39,11 @@ _The **Bespoke Aromas** MVP will include the following elements:_
 
 ![Bespoke Aromas - 3 Login](https://user-images.githubusercontent.com/83891591/135920123-41be15b9-7747-4cda-8e4f-1270c8f617ba.png)
 
-![Bespoke Aromas - 4 Ratings](https://user-images.githubusercontent.com/83891591/135920235-c0469d73-b0e4-4f79-9b4e-7de90bd54a2b.png)
+![Bespoke Aromas - 4 Ratings](https://user-images.githubusercontent.com/83891591/135951990-fef48900-b1cc-4a00-a7d4-04a36cca35e2.png)
 
-![Bespoke Aromas - 5 RatingCreate](https://user-images.githubusercontent.com/83891591/135920266-547dda4f-9313-41ea-85a5-f805b589abbe.png)
+![Bespoke Aromas - 5 RatingCreate](https://user-images.githubusercontent.com/83891591/135952026-beac8040-690e-4aad-a5af-b156039a523e.png)
+
+![Bespoke Aromas - RatingDetail](https://user-images.githubusercontent.com/83891591/135951554-8f9ea5a8-a152-478b-97d0-d23046480ef9.png)
 
 ![Bespoke Aromas - 6 RatingEdit](https://user-images.githubusercontent.com/83891591/135920288-104a6104-32e4-4a01-a103-df8f1ff561e6.png)
 
