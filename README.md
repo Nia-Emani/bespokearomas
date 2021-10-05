@@ -51,7 +51,7 @@ _The **Bespoke Aromas** MVP will include the following elements:_
 
 #### Component Tree
 
-![Bespoke Aromas - Component Tree drawio](https://user-images.githubusercontent.com/83891591/135920704-bfd3aaa7-6d31-4fbe-8f99-427075800065.png)
+![Bespoke Aromas - Component Tree drawio](https://user-images.githubusercontent.com/83891591/136036323-d1e2c430-0e7e-4fc4-a5d6-34dbb4b3e7da.png)
 
 #### Component Architecture
 
