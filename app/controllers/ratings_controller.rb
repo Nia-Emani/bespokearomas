@@ -1,5 +1,6 @@
 class RatingsController < ApplicationController
   before_action :set_rating, only: [:show, :update, :destroy]
+  before_action :authorize_request, only: [:create, :update, :destroy]
 
   # GET /ratings
   def index
@@ -10,15 +11,17 @@ class RatingsController < ApplicationController
 
   # GET /ratings/1
   def show
-    render json: @rating
+    render json: @rating, include: :fragrances
+
   end
 
   # POST /ratings
   def create
     @rating = Rating.new(rating_params)
+    @rating.user = @current_user
 
     if @rating.save
-      render json: @rating, status: :created, location: @rating
+      render json: @rating, status: :created
     else
       render json: @rating.errors, status: :unprocessable_entity
     end
@@ -46,6 +49,6 @@ class RatingsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def rating_params
-      params.require(:rating).permit(:rank, :user_id, :fragrance_id)
+      params.require(:rating).permit(:rank, :fragrance_id)
     end
 end
