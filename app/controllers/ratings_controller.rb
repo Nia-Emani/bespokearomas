@@ -6,7 +6,7 @@ class RatingsController < ApplicationController
   def index
     @ratings = Rating.all
 
-    render json: @ratings
+    render json: @ratings, include: :fragrances
   end
 
   # GET /ratings/1
@@ -39,6 +39,16 @@ class RatingsController < ApplicationController
   # DELETE /ratings/1
   def destroy
     @rating.destroy
+  end
+
+  # adding rating to fragrance here
+  def add_rating_to_fragrance
+    @fragrance = Fragrance.find(params[:id])
+    @rating = Rating.find(params[:rating_id])
+
+    @fragrance.ratings << @rating
+
+    render json: @fragrance, include: :ratings
   end
 
   private
