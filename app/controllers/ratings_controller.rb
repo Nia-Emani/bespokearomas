@@ -6,12 +6,12 @@ class RatingsController < ApplicationController
   def index
     @ratings = Rating.all
 
-    render json: @ratings, include: :fragrances
+    render json: @ratings, include: :fragrance
   end
 
   # GET /ratings/1
   def show
-    render json: @rating, include: :fragrances
+    render json: @rating, include: :fragrance
 
   end
 
