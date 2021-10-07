@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Register(props) {
   const [formData, setFormData] = useState({
@@ -62,6 +63,7 @@ export default function Register(props) {
             onChange={handleChange}
           />
         </label> */}
+        <Link to="/login">Login</Link>
         <button className="register-button">Get Started</button>
       </form>
     </div>

@@ -31,11 +31,11 @@ function App() {
     // history.push("/");
   };
 
-  // const handleRegister = async (registerData) => {
-  //   const userData = await registerUser(registerData);
-  //   setCurrentUser(userData);
-  //   history.push("/");
-  // };
+  const handleRegister = async (registerData) => {
+    const userData = await registerUser(registerData);
+    setCurrentUser(userData);
+    // history.push("/");
+  };
 
   // const handleLogout = () => {
   //   setCurrentUser(null);
@@ -48,7 +48,7 @@ function App() {
       <Layout>
         <Switch>
           <Route path="/register">
-            <Register />
+            <Register handleRegister={handleRegister} />
           </Route>
           <Route path="/login">
             <Login handleLogin={handleLogin} />
