@@ -5,6 +5,19 @@ export default function Layout(props) {
     <div>
       <header className="layout-header">
         <h1>Bespoke Aromas</h1>
+        {props.currentUser ? (
+          <div>
+            <p>{props.currentUser.username}</p>
+            <button onClick={props.handleLogout}>Logout</button>
+          </div>
+        ) : (
+          <Link to="/login">Login</Link>
+        )}
+        {props.currentUser && (
+          <div>
+            <Link to="/ratings">All Ratings</Link>
+          </div>
+        )}
         <Link className="register-nav-link" to="/register">
           Register
         </Link>

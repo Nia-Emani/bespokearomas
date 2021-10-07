@@ -5,6 +5,7 @@ import { Route, Switch, useHistory } from "react-router-dom";
 import Layout from "./components/Layout";
 import Login from "./screens/Login";
 import Register from "./screens/Register";
+import MainContainer from "./containers/MainContainer";
 
 import {
   loginUser,
@@ -15,7 +16,7 @@ import {
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
-  // const history = useHistory();
+  const history = useHistory();
 
   useEffect(() => {
     const handleVerify = async () => {
@@ -28,30 +29,33 @@ function App() {
   const handleLogin = async (loginData) => {
     const userData = await loginUser(loginData);
     setCurrentUser(userData);
-    // history.push("/");
+    history.push("/");
   };
 
   const handleRegister = async (registerData) => {
     const userData = await registerUser(registerData);
     setCurrentUser(userData);
-    // history.push("/");
+    history.push("/");
   };
 
-  // const handleLogout = () => {
-  //   setCurrentUser(null);
-  //   localStorage.removeItem("authToken");
-  //   removeToken();
-  // };
+  const handleLogout = () => {
+    setCurrentUser(null);
+    localStorage.removeItem("authToken");
+    removeToken();
+  };
 
   return (
     <div className="App">
-      <Layout>
+      <Layout currentUser={currentUser} handleLogout={handleLogout}>
         <Switch>
           <Route path="/register">
             <Register handleRegister={handleRegister} />
           </Route>
           <Route path="/login">
             <Login handleLogin={handleLogin} />
+          </Route>
+          <Route path="/">
+            <MainContainer />
           </Route>
         </Switch>
       </Layout>
