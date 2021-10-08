@@ -9,10 +9,10 @@ import {
 } from "../services/ratings";
 import { getAllFragrances } from "../services/fragrances";
 import Fragrances from "../screens/Fragrances";
+import RatingDetail from "../screens/RatingDetail";
+import RatingCreate from "../screens/RatingCreate";
+import RatingEdit from "../screens/RatingEdit";
 // import ratings from "../screens/Ratings";
-// import ratingCreate from "../screens/ratingCreate";
-// import ratingEdit from "../screens/ratingEdit";
-// import ratingDetail from "../screens/ratingDetail";
 
 export default function MainContainer() {
   const [ratings, setRatings] = useState([]);
@@ -35,11 +35,21 @@ export default function MainContainer() {
     fetchFragrances();
   }, []);
 
-  // const handleRatingCreate = async (ratingData) => {
-  //   const newRating = await postRating(ratingData);
-  //   setRatings((prevState) => [...prevState, newRating]);
-  //   history.push("/ratings");
-  // };
+  const handleRatingCreate = async (ratingData) => {
+    const newRating = await postRating(ratingData);
+    setRatings((prevState) => [...prevState, newRating]);
+    // history.push("/ratings");
+  };
+
+  const handleRatingEdit = async (id, ratingData) => {
+    const editedRating = await putRating(id, ratingData);
+    setRatings((prevState) =>
+      prevState.map((rating) => {
+        return rating.id === Number(id) ? editedRating : rating;
+      })
+    );
+    // history.push("/ratings");
+  };
 
   // const handleRatingDelete = async (id) => {
   //   await deleteRating(id);
@@ -48,32 +58,25 @@ export default function MainContainer() {
   //   );
   // };
 
-  // const handleRatingUpdate = async (id, ratingData) => {
-  //   const updatedRating = await putRating(id, ratingData);
-  //   setRatings((prevState) =>
-  //     prevState.map((rating) => {
-  //       return rating.id === Number(id) ? updatedRating : rating;
-  //     })
-  //   );
-  //   history.push("/ratings");
-  // };
-
   return (
     <Switch>
       <Route path="/fragrances">
-        <Fragrances fragrances={fragrances} />
+        <Fragrances fragrances={fragrances} ratings={ratings} />
       </Route>
-      {/* <Route path="/ratings/:id/edit">
-        <ratingEdit ratings={ratings} handleRatingUpdate={handleRatingUpdate} />
-      </Route>
-      <Route path="/ratings/:id">
-        <ratingDetail fragrances={fragrances} />
+      <Route path="/fragrance-detail/:id">
+        <RatingDetail ratings={ratings} />
       </Route>
       <Route path="/ratings/new">
-        <ratingCreate handleRatingCreate={handleRatingCreate} />
+        <RatingCreate handleRatingCreate={handleRatingCreate} />
       </Route>
-      <Route path="/ratings">
-        <ratings ratings={ratings} handleRatingDelete={handleRatingDelete} />
+      <Route path="/ratings/:id/edit">
+        {/* <Route path="/ratings/:id">
+          <RatingDetail fragrances={fragrances} />
+        </Route> */}
+        <RatingEdit ratings={ratings} handleRatingEdit={handleRatingEdit} />
+      </Route>
+      {/* <Route path="/ratings">
+        <Ratings ratings={ratings} handleRatingDelete={handleRatingDelete} />
       </Route> */}
     </Switch>
   );

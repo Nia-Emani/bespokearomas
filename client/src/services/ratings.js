@@ -6,7 +6,7 @@ export const getAllRatings = async () => {
 };
 
 export const postRating = async (ratingData) => {
-  const resp = await api.post("/ratings", { rating: ratingData });
+  const resp = await api.post("/ratings/new", { rating: ratingData });
   return resp.data;
 };
 
