@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useHistory } from "react-router-dom";
 import { postRating } from "../services/ratings";
 import { getOneFragrance } from "../services/fragrances";
 
@@ -7,7 +7,7 @@ export default function RatingCreate(props) {
   const [fragranceItem, setFragranceItem] = useState(null);
   const [selectedRating, setSelectedRating] = useState("");
   const { id } = useParams();
-  const { ratings } = props;
+  let history = useHistory();
 
   useEffect(() => {
     const fetchFragranceItem = async () => {
@@ -25,8 +25,12 @@ export default function RatingCreate(props) {
   // Our handle submit for adding the rating to our fragrances
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const fragranceItem = await postRating(selectedRating, id);
+    const fullRating = {
+      rank: selectedRating,
+    };
+    const fragranceItem = await postRating(fullRating, id);
     setFragranceItem(fragranceItem);
+    history.push(`/fragrance-detail/${id}`);
   };
 
   return (

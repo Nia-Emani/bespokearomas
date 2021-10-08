@@ -5,8 +5,16 @@ export const getAllRatings = async () => {
   return resp.data;
 };
 
-export const postRating = async (ratingData) => {
-  const resp = await api.post("/ratings/new", { rating: ratingData });
+export const getOneRating = async (id) => {
+  const resp = await api.get(`/ratings/${id}`);
+  return resp.data;
+};
+
+export const postRating = async (ratingData, id) => {
+  // console.log("from our services file", ratingData);
+  const resp = await api.post(`/fragrances/${id}/ratings`, {
+    rating: ratingData,
+  });
   return resp.data;
 };
 

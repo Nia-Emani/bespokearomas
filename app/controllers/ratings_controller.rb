@@ -14,15 +14,14 @@ class RatingsController < ApplicationController
     render json: @rating, include: :fragrance
 
   end
-
-  # POST /ratings
+  
   # adding rating to fragrance here
-
-
+  # POST /fragrances/:fragrance_id/ratings
   def create
+    @fragrance = Fragrance.find(params[:fragrance_id])
     @rating = Rating.new(rating_params)
     @rating.user = @current_user
-    # @fragrance = Fragrance.find(params[:id])
+    @rating.fragrance = @fragrance
 
     if @rating.save
       render json: @rating, status: :created
@@ -62,6 +61,6 @@ class RatingsController < ApplicationController
     
     # Only allow a list of trusted parameters through.
     def rating_params
-      params.require(:rating).permit(:rank, :fragrance_id)
+      params.require(:rating).permit(:rank, :fragrance_id, :user_id)
     end
 end
