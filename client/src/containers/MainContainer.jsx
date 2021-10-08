@@ -16,9 +16,9 @@ import RatingEdit from "../screens/RatingEdit";
 // import ratings from "../screens/Ratings";
 
 export default function MainContainer() {
-  // const [ratings, setRatings] = useState([]);
+  const [toggle, setToggle] = useState(false);
   const [fragrances, setFragrances] = useState([]);
-  //   const history = useHistory();
+  const history = useHistory();
 
   // useEffect(() => {
   //   const fetchRatings = async () => {
@@ -34,7 +34,7 @@ export default function MainContainer() {
       setFragrances(fragranceList);
     };
     fetchFragrances();
-  }, []);
+  }, [toggle]);
 
   // const handleRatingCreate = async (ratingData) => {
   //   const newRating = await postRating(ratingData);
@@ -42,41 +42,30 @@ export default function MainContainer() {
   //   history.push("/ratings");
   // };
 
-  // const handleRatingEdit = async (id, ratingData) => {
-  //   const editedRating = await putRating(id, ratingData);
-  //   setRatings((prevState) =>
-  //     prevState.map((rating) => {
-  //       return rating.id === Number(id) ? editedRating : rating;
-  //     })
-  //   );
-  //   history.push("/ratings");
-  // };
+  const handleRatingEdit = async (ratingData, id, fragId) => {
+    await putRating(ratingData, id);
+    setToggle((prev) => !prev);
+    history.push(`/fragrance-detail/${fragId}`);
+  };
 
-  // const handleRatingDelete = async (id) => {
-  //   await deleteRating(id);
-  //   setRatings((prevState) =>
-  //     prevState.filter((ratingItem) => ratingItem.id !== id)
-  //   );
-  // };
+  const handleRatingDelete = async (id) => {
+    await deleteRating(id);
+    setToggle((prev) => !prev);
+  };
 
   return (
     <Switch>
+      <Route path="/fragrance-detail/:id">
+        <RatingDetail toggle={toggle} handleRatingDelete={handleRatingDelete}/>
+      </Route>
       <Route path="/fragrances">
         <Fragrances fragrances={fragrances} />
-      </Route>
-      <Route path="/fragrance-detail/:id">
-        <RatingDetail />
       </Route>
       <Route path="/ratings/:id/new">
         <RatingCreate />
       </Route>
       <Route path="/ratings/:id/edit">
-        {/* <Route path="/ratings/:id">
-          <RatingDetail fragrances={fragrances} />
-        </Route> */}
-
-        {/* BRING LINE 79 BACK */}
-        {/* <RatingEdit handleRatingEdit={handleRatingEdit} /> */}
+        <RatingEdit handleRatingEdit={handleRatingEdit} />
       </Route>
       {/* <Route path="/ratings">
         <Ratings ratings={ratings} handleRatingDelete={handleRatingDelete} />

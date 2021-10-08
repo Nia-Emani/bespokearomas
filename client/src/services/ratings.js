@@ -23,7 +23,7 @@ export const deleteRating = async (id) => {
   return resp;
 };
 
-export const putRating = async (id, ratingData) => {
+export const putRating = async (ratingData, id) => {
   const resp = await api.put(`/ratings/${id}`, { rating: ratingData });
   return resp.data;
 };

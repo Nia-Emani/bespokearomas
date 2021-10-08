@@ -30,7 +30,7 @@ class RatingsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /ratings/1
+  # PUT /ratings/1
   def update
     if @rating.update(rating_params)
       render json: @rating
