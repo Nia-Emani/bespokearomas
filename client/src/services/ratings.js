@@ -19,3 +19,8 @@ export const putRating = async (id, ratingData) => {
   const resp = await api.put(`/ratings/${id}`, { rating: ratingData });
   return resp.data;
 };
+
+// export const addRatingToFragrance = async (ratingId, id) => {
+//   const resp = await api.put(`/ratings/${ratingId}/fragrances/${id}`);
+//   return resp.data;
+// };

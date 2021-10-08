@@ -21,9 +21,8 @@ export default function Fragrances(props) {
             />
           ))}
           <button>
-            <Link to={`/fragrances/${fragrance.id}/ratings/new`}>
-              Add Rating
-            </Link>
+            {/* <Link to={`/fragrances/${fragrance.id}/ratings/new`}> */}
+            <Link to={`/ratings/${fragrance.id}/new`}>Add Rating</Link>
           </button>
           <button>
             <Link to={`/fragrance-detail/${fragrance.id}`}>Details</Link>

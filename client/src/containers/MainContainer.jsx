@@ -66,7 +66,7 @@ export default function MainContainer() {
       <Route path="/fragrance-detail/:id">
         <RatingDetail ratings={ratings} />
       </Route>
-      <Route path="/ratings/new">
+      <Route path="/ratings/:id/new">
         <RatingCreate handleRatingCreate={handleRatingCreate} />
       </Route>
       <Route path="/ratings/:id/edit">

@@ -15,7 +15,7 @@ export default function Layout(props) {
         )}
         {props.currentUser && (
           <div>
-            <Link to="/ratings">All Ratings</Link>
+            <Link to="/fragrances">All Fragrances</Link>
           </div>
         )}
         <Link className="register-nav-link" to="/register">
