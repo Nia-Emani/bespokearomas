@@ -13,28 +13,24 @@ export default function Nav(props) {
           />
         </div>
       </Link>
-      {/* <div className="nav-links">
+      <header className="layout-header">
         {props.currentUser ? (
           <div>
             <p>{props.currentUser.username}</p>
+            <Link to="/fragrances">All Fragrances</Link>
             <button onClick={props.handleLogout}>Logout</button>
           </div>
         ) : (
-          <Link to="/login">Login</Link>
-        )}
-        {props.currentUser && (
           <div>
-            <Link to="/fragrances">All Fragrances</Link>
+            <Link className="register-nav-link" to="/register">
+              Register
+            </Link>
+            <Link className="login-nav-link" to="/login">
+              Login
+            </Link>
           </div>
         )}
-        <Link className="register-nav-link" to="/register">
-          Register
-        </Link>
-        <Link className="login-nav-link" to="/login">
-          Login
-        </Link>
-        {props.children}
-         </div> */}
+      </header>
     </div>
   );
 }
