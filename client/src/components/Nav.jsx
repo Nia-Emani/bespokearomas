@@ -13,7 +13,7 @@ export default function Nav(props) {
           />
         </div>
       </Link>
-      <header className="layout-header">
+      <header className="auth-links-container">
         {props.currentUser ? (
           <div>
             <p>{props.currentUser.username}</p>
