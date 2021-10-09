@@ -3,10 +3,11 @@ import "../css/Nav.css";
 
 export default function Nav(props) {
   return (
-    <div>
+    <div className="nav">
       <Link to="/">
-        <div className="logo">
+        <div>
           <img
+            className="logo"
             src="https://lh3.googleusercontent.com/fVObHvgpK2mNqJFFzNPekr3xiZS9NBnJGKkxagggqm8pnkYLVs6URBlaHMGwksa1N-Un4JtzQ08mr02rBHNjAZbTnU_Uyq8X9HM7SSmaTagw_AXsz2SpLo8knYjdObjIeBg1tCypBGE=h385"
             alt="Bespoke Aromas logo"
           />

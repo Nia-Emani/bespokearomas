@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
+import "../css/Home.css";
 
 export default function Home() {
   return (
     <div>
       <div className="hero-image">
-        <img src="https://lh3.googleusercontent.com/QYd0wEfVT8b6C87KvT-5FC_FzLV1DDuriJQ09tWW5uYgC7iWqgWcS5yT2nSRVV83eZT0Znk9NB8IvPLjCAkEp32VLwUAPQi-PG1QpNkeFSxjMAO32D1ITkqk2lmDstltP2Bw6bNjcmw=h385" />
+        <img src="https://lh3.googleusercontent.com/0HWfkAjxFOKNPZv7OI5tErrpG1SWajhzjwqMHgkdp0ARjB1OlWCelM0vJPYwv943CWzQGpIvVZsOG8LdGfjZfhR0f4jObE9RdZNAG_g8ESN-Mttx6uXjwLafQ7keoQMoz0PoX6UCTk8=h385" />
       </div>
       <div className="question-section">
         <h2 className="home-question">How does your favorite scent rank?</h2>
