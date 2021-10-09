@@ -41,7 +41,7 @@ export default function RatingDetail(props) {
             <Link to={`/ratings/${rating.id}/edit`}>Edit Rating</Link>
           </button>
           <button onClick={() => props.handleRatingDelete(rating.id)}>
-            Delete
+            Delete Rating
           </button>
         </div>
       ))}

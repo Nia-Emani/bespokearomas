@@ -19,6 +19,10 @@ export default function Register(props) {
 
   return (
     <div>
+      <img
+        className="register-image"
+        src="https://lh3.googleusercontent.com/GiRRW2eS6qaBuPf9TwFIlXNbp0g8RXrileQ5uImpMrql2chO49g5NKJS4xVhqZxg3QCGtHLpwBzLVyYyDu_cItkghY4CoLALBgNHNHu6SHFvqDDNqluTEDXe5lpScqNzOTGkSkyxa_Y=h800"
+      />
       <form
         className="register-form"
         onSubmit={(e) => {

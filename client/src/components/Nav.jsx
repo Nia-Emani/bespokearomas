@@ -1,12 +1,18 @@
 import { Link } from "react-router-dom";
-import Nav from "./Nav";
-import Footer from "./Footer";
+import "../css/Nav.css";
 
-export default function Layout(props) {
+export default function Nav(props) {
   return (
     <div>
-      <Nav></Nav>
-      <header className="layout-header">
+      <Link to="/">
+        <div className="logo">
+          <img
+            src="https://lh3.googleusercontent.com/fVObHvgpK2mNqJFFzNPekr3xiZS9NBnJGKkxagggqm8pnkYLVs6URBlaHMGwksa1N-Un4JtzQ08mr02rBHNjAZbTnU_Uyq8X9HM7SSmaTagw_AXsz2SpLo8knYjdObjIeBg1tCypBGE=h385"
+            alt="Bespoke Aromas logo"
+          />
+        </div>
+      </Link>
+      {/* <div className="nav-links">
         {props.currentUser ? (
           <div>
             <p>{props.currentUser.username}</p>
@@ -26,12 +32,8 @@ export default function Layout(props) {
         <Link className="login-nav-link" to="/login">
           Login
         </Link>
-      </header>
-
-      {props.children}
-      <footer>
-        <Footer />
-      </footer>
+        {props.children}
+         </div> */}
     </div>
   );
 }
