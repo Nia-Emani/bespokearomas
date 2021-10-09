@@ -9,3 +9,17 @@ a {
 a:hover {
   color: #b69b9b;
 }
+button {
+  font-family: "Raleway", sans-serif, Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  background-image: linear-gradient(
+    to right,
+    #b69b9b 0%,
+    #d6b4b4 25%,
+    #e3e4e0 51%,
+    #d6b4b4 86%,
+    #b69b9b 100%
+  );
+  border-radius: 2px;
+  border-radius: 2px;
+}
