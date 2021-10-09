@@ -5,13 +5,16 @@ export default function Home() {
   return (
     <div>
       <div className="hero-image">
-        <img src="https://lh3.googleusercontent.com/0HWfkAjxFOKNPZv7OI5tErrpG1SWajhzjwqMHgkdp0ARjB1OlWCelM0vJPYwv943CWzQGpIvVZsOG8LdGfjZfhR0f4jObE9RdZNAG_g8ESN-Mttx6uXjwLafQ7keoQMoz0PoX6UCTk8=h385" />
+        <img
+          alt="pink fragrance bottle"
+          src="https://lh3.googleusercontent.com/0HWfkAjxFOKNPZv7OI5tErrpG1SWajhzjwqMHgkdp0ARjB1OlWCelM0vJPYwv943CWzQGpIvVZsOG8LdGfjZfhR0f4jObE9RdZNAG_g8ESN-Mttx6uXjwLafQ7keoQMoz0PoX6UCTk8=h385"
+        />
       </div>
       <div className="question-section">
         <h2 className="home-question">How does your favorite scent rank?</h2>
         <img
           className="divider"
-          src="https://lh3.googleusercontent.com/l_uBn_4aL5ppFC00m3vOXjmENw-aoT3uqdi5C2OG0QninS3UohsOTAv0Mqvt3k9_MagRUvEUaTj7wbreBpl4eyh4k9RuJC2Kt2R1gsxfMLiiaiQLS7j1V156HHKcSmkdLwXSP-Stb_0=h80"
+          src="https://lh3.googleusercontent.com/T6C7YlE8hm50wyZHL5wJDhrmsJdhH-VKWyVee78VRz8D1Uzgjt6eWmF5o_-Gc35hb3OjLToqep74Ax0eShNWmJhN3s4mYxTKvZGLLMWacDIVAwV6rJtWneTyHRm8QupPz3Bx4vnqmbc=h40"
         />
       </div>
       <div className="highest-rated-section">
