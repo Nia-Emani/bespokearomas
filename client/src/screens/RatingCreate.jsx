@@ -42,11 +42,15 @@ export default function RatingCreate(props) {
       </h3>
       <div className="add-rating-form-container">
         <form className="add-rating-form" onSubmit={handleSubmit}>
-          <select onChange={handleChange} defaultValue="default">
+          <select
+            className="add-rating-dropdown"
+            onChange={handleChange}
+            defaultValue="default"
+          >
             {/* the "defaultValue" on the <select> tag needs to match the "value" on our default <option> tag */}
             {/* we also add the "disabled" in the <option> to prevent users from selecting it*/}
             <option disabled value="default">
-              -- Select a Rating --
+              -- Select your rating --
             </option>
             <option value="1">1</option>
             <option value="2">2</option>
