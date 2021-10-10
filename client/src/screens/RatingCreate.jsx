@@ -36,8 +36,10 @@ export default function RatingCreate(props) {
 
   return (
     <div className="add-rating">
-      <h1>Rate this fragrance!</h1>
-      <h3>Choose from 1 star to 5 stars, with one being the lowest.</h3>
+      <h1 className="add-rating-heading">Rate this fragrance!</h1>
+      <h3 className="add-rating-subheading">
+        Choose from 1 star to 5 stars, with one being the lowest.
+      </h3>
 
       {/* below is our form for the flavor drop down */}
       <form onSubmit={handleSubmit}>
