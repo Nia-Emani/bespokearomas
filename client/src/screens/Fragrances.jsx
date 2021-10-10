@@ -30,8 +30,9 @@ export default function Fragrances(props) {
               {fragrance.ratings.map((rating) => (
                 <StarRatings
                   rating={Number(rating.rank)}
-                  starDimension="40px"
-                  starSpacing="15px"
+                  starDimension="30px"
+                  starSpacing="6px"
+                  starRatedColor="rgb(225, 185, 93)"
                 />
               ))}
               <div className="fragrances-buttons-container">
