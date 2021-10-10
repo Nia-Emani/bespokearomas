@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams, useHistory } from "react-router-dom";
 import { postRating } from "../services/ratings";
 import { getOneFragrance } from "../services/fragrances";
+import "../css/RatingCreate.css";
 
 export default function RatingCreate(props) {
   const [fragranceItem, setFragranceItem] = useState(null);
@@ -34,7 +35,7 @@ export default function RatingCreate(props) {
   };
 
   return (
-    <div>
+    <div className="add-rating">
       <h1>Rate this fragrance!</h1>
       <h3>Choose from 1 star to 5 stars, with one being the lowest.</h3>
 

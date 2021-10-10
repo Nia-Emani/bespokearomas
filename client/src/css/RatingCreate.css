@@ -1,0 +1,8 @@
+.add-rating {
+  display: flex;
+  margin: 3% 31% 0;
+  box-shadow: 0px 0px 10px 5px #cecece;
+  width: 39%;
+  height: 400px;
+  flex-direction: column;
+}

@@ -23,23 +23,25 @@ export default function Fragrances(props) {
               src={fragrance.image_url}
               alt="fragrances bottle"
             />
-            <p className="fragrances-name" key={fragrance.id}>
-              {fragrance.name}{" "}
-            </p>
-            {fragrance.ratings.map((rating) => (
-              <StarRatings
-                rating={Number(rating.rank)}
-                starDimension="40px"
-                starSpacing="15px"
-              />
-            ))}
-            <div className="fragrances-buttons">
-              <button className="add-button">
-                <Link to={`/ratings/${fragrance.id}/new`}>Add Rating</Link>
-              </button>
-              <button className="details-button">
-                <Link to={`/fragrance-detail/${fragrance.id}`}>Details</Link>
-              </button>
+            <div className="fragrance-card-details">
+              <p className="fragrances-name" key={fragrance.id}>
+                {fragrance.name}{" "}
+              </p>
+              {fragrance.ratings.map((rating) => (
+                <StarRatings
+                  rating={Number(rating.rank)}
+                  starDimension="40px"
+                  starSpacing="15px"
+                />
+              ))}
+              <div className="fragrances-buttons-container">
+                <button className="fragrances-button">
+                  <Link to={`/ratings/${fragrance.id}/new`}>Add Rating</Link>
+                </button>
+                <button className="fragrances-button">
+                  <Link to={`/fragrance-detail/${fragrance.id}`}>Details</Link>
+                </button>
+              </div>
             </div>
           </div>
         ))}

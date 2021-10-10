@@ -11,7 +11,7 @@
   margin: 10px;
   box-shadow: 0px 0px 3px 1px #cecece;
   padding: 10px;
-  width: 28%;
+  width: 20%;
   height: 400px;
 }
 .fragrances-container {
@@ -24,6 +24,17 @@
 .fragrances-image {
   margin: 10% 0;
 }
+.fragrance-card-details {
+  width: 85%;
+}
 .fragrances-name {
   font-size: 20px;
+}
+.fragrances-buttons-container {
+  display: flex;
+  justify-content: space-around;
+}
+.fragrances-button {
+  height: 26px;
+  width: 42%;
 }
