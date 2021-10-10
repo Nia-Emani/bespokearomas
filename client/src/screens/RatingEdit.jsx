@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams, useHistory } from "react-router-dom";
 import { putRating, getOneRating } from "../services/ratings";
+import "../css/RatingEdit.css";
 
 export default function RatingEdit(props) {
   const [fragranceId, setFragranceId] = useState("");
