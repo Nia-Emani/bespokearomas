@@ -4,6 +4,15 @@
   font-weight: 100;
   margin-bottom: 0;
 }
+.fragrances-greeting2 {
+  margin: -19px 63%;
+  width: 9%;
+  font-size: 23px;
+}
+.underline {
+  margin: -2% 0px 3%;
+  width: 12%;
+}
 .fragrances-cards {
   display: flex;
   flex-direction: column;
