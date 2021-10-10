@@ -52,11 +52,11 @@ export default function RatingCreate(props) {
             <option disabled value="default">
               -- Select your rating --
             </option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
+            <option value="1">⭐</option>
+            <option value="2">⭐ ⭐</option>
+            <option value="3">⭐ ⭐ ⭐</option>
+            <option value="4">⭐ ⭐ ⭐ ⭐</option>
+            <option value="5">⭐ ⭐ ⭐ ⭐ ⭐</option>
           </select>
           <button className="add-rating-button">Submit</button>
         </form>
