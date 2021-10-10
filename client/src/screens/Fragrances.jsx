@@ -33,12 +33,14 @@ export default function Fragrances(props) {
                 starSpacing="15px"
               />
             ))}
-            <button className="add-button">
-              <Link to={`/ratings/${fragrance.id}/new`}>Add Rating</Link>
-            </button>
-            <button className="details-button">
-              <Link to={`/fragrance-detail/${fragrance.id}`}>Details</Link>
-            </button>
+            <div className="fragrances-buttons">
+              <button className="add-button">
+                <Link to={`/ratings/${fragrance.id}/new`}>Add Rating</Link>
+              </button>
+              <button className="details-button">
+                <Link to={`/fragrance-detail/${fragrance.id}`}>Details</Link>
+              </button>
+            </div>
           </div>
         ))}
       </div>
