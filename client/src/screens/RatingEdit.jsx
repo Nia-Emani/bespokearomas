@@ -31,14 +31,15 @@ export default function RatingEdit(props) {
   };
 
   return (
-    <div>
+    <div className="rating-edit">
       <form
+        className="rating-edit-form"
         onSubmit={(e) => {
           e.preventDefault();
           props.handleRatingEdit(formData, id, fragranceId);
         }}
       >
-        <h3>Edit rating</h3>
+        <h3 className="rating-edit-heading">Edit rating</h3>
         <select
           className="rating-create-dropdown"
           value={formData.rank}
@@ -55,7 +56,7 @@ export default function RatingEdit(props) {
           <option value="4">⭐ ⭐ ⭐ ⭐</option>
           <option value="5">⭐ ⭐ ⭐ ⭐ ⭐</option>
         </select>
-        <button>Submit</button>
+        <button className="rating-edit-button">Submit</button>
       </form>
     </div>
   );
