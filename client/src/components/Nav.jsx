@@ -4,7 +4,7 @@ import "../css/Nav.css";
 export default function Nav(props) {
   return (
     <div className="nav">
-      <Link to="/">
+      <Link className="logo-container" to="/">
         <div>
           <img
             className="logo"
@@ -13,9 +13,15 @@ export default function Nav(props) {
           />
         </div>
       </Link>
-      <header className="auth-links-container">
+      <header
+        className={
+          props.currentUser
+            ? ".auth-links-container-user"
+            : ".auth-links-container-nouser"
+        }
+      >
         {props.currentUser ? (
-          <div>
+          <div className="user">
             <p>{props.currentUser.username}</p>
             <Link to="/fragrances">All Fragrances</Link>
             <button onClick={props.handleLogout}>Logout</button>

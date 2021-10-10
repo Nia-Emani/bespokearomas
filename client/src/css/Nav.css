@@ -4,15 +4,36 @@
   position: sticky;
   top: 0;
   display: flex;
-  justify-content: right;
   align-items: center;
+  justify-content: center;
+}
+.logo-container {
+  width: 75%;
 }
 .logo {
   padding: 20px 0;
 }
-.auth-links-container {
+/* .auth-links-container {
   text-align: right;
   padding: 0px 5% 0 30%;
+} */
+.auth-links-container-user {
+  text-align: right;
+  padding: 0px 5% 0 19%;
+}
+.auth-links-container-nouser {
+  text-align: right;
+  padding: 0px 5% 0 30%;
+}
+.user {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.user p,
+.user a,
+.user button {
+  padding: 0 7px;
 }
 .register-nav-link {
   padding: 0 25% 0 0;
@@ -20,20 +41,32 @@
 
 @media (max-width: 500px) {
   .logo {
-    background: #ffffff;
-    width: 100%;
+    width: 200px;
     display: flex;
-    margin: 0 98%;
+    margin: 0 61%;
   }
   .auth-links-container {
     text-align: right;
     padding: 0px 5% 0 22%;
     width: 100%;
-    font-size: 9px;
+    font-size: 11px;
     display: flex;
     justify-content: flex-end;
   }
   .register-nav-link {
     padding: 0 10% 0 0;
   }
+
+  /* nav links div
+  display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    
+    
+  each nav link
+      padding: 0 7px;
+      
+  auth links contaainer
+      padding: 0px 5% 0 19%;
+}*/
 }

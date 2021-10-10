@@ -42,3 +42,32 @@
   height: 50px;
   width: 200px;
 }
+
+@media (max-width: 500px) {
+  .hero-image {
+    width: 100%;
+  }
+  .home-question {
+    font-size: 40px;
+  }
+  .divider {
+    width: 250px;
+  }
+  .highest-rated-text {
+    padding: 32px 0 0;
+    font-size: 19px;
+  }
+  .home-card-section {
+    width: auto;
+    margin: 0;
+  }
+  .home-cards {
+    height: 250px;
+  }
+  .home-card-img {
+    width: 100%;
+  }
+  .home-card-name {
+    font-size: 14px;
+  }
+}
