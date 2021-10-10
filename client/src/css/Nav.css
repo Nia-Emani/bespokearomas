@@ -17,3 +17,23 @@
 .register-nav-link {
   padding: 0 25% 0 0;
 }
+
+@media (max-width: 500px) {
+  .logo {
+    background: #ffffff;
+    width: 100%;
+    display: flex;
+    margin: 0 98%;
+  }
+  .auth-links-container {
+    text-align: right;
+    padding: 0px 5% 0 22%;
+    width: 100%;
+    font-size: 9px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .register-nav-link {
+    padding: 0 10% 0 0;
+  }
+}

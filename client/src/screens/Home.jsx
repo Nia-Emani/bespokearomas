@@ -4,12 +4,11 @@ import "../css/Home.css";
 export default function Home() {
   return (
     <div>
-      <div className="hero-image">
-        <img
-          alt="pink fragrance bottle"
-          src="https://lh3.googleusercontent.com/0HWfkAjxFOKNPZv7OI5tErrpG1SWajhzjwqMHgkdp0ARjB1OlWCelM0vJPYwv943CWzQGpIvVZsOG8LdGfjZfhR0f4jObE9RdZNAG_g8ESN-Mttx6uXjwLafQ7keoQMoz0PoX6UCTk8=h385"
-        />
-      </div>
+      <img
+        className="hero-image"
+        alt="pink fragrance bottle"
+        src="https://lh3.googleusercontent.com/0HWfkAjxFOKNPZv7OI5tErrpG1SWajhzjwqMHgkdp0ARjB1OlWCelM0vJPYwv943CWzQGpIvVZsOG8LdGfjZfhR0f4jObE9RdZNAG_g8ESN-Mttx6uXjwLafQ7keoQMoz0PoX6UCTk8=h385"
+      />
       <div className="question-section">
         <h2 className="home-question">How does your favorite scent rank?</h2>
         <img
