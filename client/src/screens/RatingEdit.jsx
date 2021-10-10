@@ -24,7 +24,6 @@ export default function RatingEdit(props) {
 
   const handleChange = (e) => {
     const { value } = e.target;
-    // setUpdatedRating(value);
     setFormData((prev) => ({
       ...prev,
       rank: value,
