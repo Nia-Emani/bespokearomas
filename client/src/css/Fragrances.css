@@ -22,13 +22,17 @@
   margin: 0 16%;
 }
 .fragrances-image {
-  margin: 10% 0;
+  margin-top: 10%;
 }
 .fragrance-card-details {
   width: 85%;
+  margin: 25% 0;
 }
 .fragrances-name {
   font-size: 20px;
+}
+.star-ratings {
+  margin: 1% 0 20%;
 }
 .fragrances-buttons-container {
   display: flex;
