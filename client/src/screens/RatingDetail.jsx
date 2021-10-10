@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { getOneFragrance } from "../services/fragrances";
 import StarRatings from "react-star-ratings";
+import "../css/RatingDetail.css";
 
 export default function RatingDetail(props) {
   const [fragranceInfo, setFragranceInfo] = useState(null);
@@ -32,18 +33,18 @@ export default function RatingDetail(props) {
 
       <p className="rating-detail-name">{fragranceInfo.name}</p>
       {fragranceInfo.ratings.map((rating) => (
-        <div className="existing-rating">
+        <div className="existing-rating-info">
           <StarRatings
             rating={Number(rating.rank)}
             starDimension="40px"
             starSpacing="15px"
           />
           <div className="rating-detail-buttons">
-            <button className="rating-detail-edit-button">
+            <button className="rating-detail-button">
               <Link to={`/ratings/${rating.id}/edit`}>Edit Rating</Link>
             </button>
             <button
-              className="delete-button"
+              className="rating-detail-button"
               onClick={() => props.handleRatingDelete(rating.id)}
             >
               Delete Rating
