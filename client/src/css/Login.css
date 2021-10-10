@@ -1,0 +1,20 @@
+.login {
+  display: flex;
+  margin: 3% 31%;
+  box-shadow: 0px 0px 10px 5px #cecece;
+  width: 39%;
+  height: 400px;
+}
+.login-greeting {
+  font-family: "Mrs Saint Delafield", sans-serif;
+  font-size: 50px;
+  font-weight: 100;
+  margin: 8% 0;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
