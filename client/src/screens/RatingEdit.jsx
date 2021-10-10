@@ -39,24 +39,28 @@ export default function RatingEdit(props) {
           props.handleRatingEdit(formData, id, fragranceId);
         }}
       >
-        <h3 className="rating-edit-heading">Edit rating</h3>
-        <select
-          className="rating-create-dropdown"
-          value={formData.rank}
-          name="rating"
-          required
-          onChange={handleChange}
-        >
-          <option value={formData.rank} defaultValue>
-            {formData.rank}
-          </option>
-          <option value="1">⭐</option>
-          <option value="2">⭐ ⭐</option>
-          <option value="3">⭐ ⭐ ⭐</option>
-          <option value="4">⭐ ⭐ ⭐ ⭐</option>
-          <option value="5">⭐ ⭐ ⭐ ⭐ ⭐</option>
-        </select>
-        <button className="rating-edit-button">Submit</button>
+        <h3 className="rating-edit-heading">
+          Edit your rating for this fragrance!
+        </h3>
+        <div className="rating-edit-details">
+          <select
+            className="rating-edit-dropdown"
+            value={formData.rank}
+            name="rating"
+            required
+            onChange={handleChange}
+          >
+            <option value={formData.rank} defaultValue>
+              {formData.rank}
+            </option>
+            <option value="1">⭐</option>
+            <option value="2">⭐ ⭐</option>
+            <option value="3">⭐ ⭐ ⭐</option>
+            <option value="4">⭐ ⭐ ⭐ ⭐</option>
+            <option value="5">⭐ ⭐ ⭐ ⭐ ⭐</option>
+          </select>
+          <button className="rating-edit-button">Submit</button>
+        </div>
       </form>
     </div>
   );

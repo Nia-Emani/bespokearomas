@@ -1,0 +1,34 @@
+.rating-edit {
+  display: flex;
+  margin: 3% 31% 0;
+  box-shadow: 0px 0px 10px 5px #cecece;
+  width: 39%;
+  height: 400px;
+  flex-direction: column;
+}
+.rating-edit-heading {
+  font-family: "Mrs Saint Delafield", sans-serif;
+  font-size: 52px;
+  font-weight: 100;
+  margin: 14% 0 0;
+}
+.rating-edit-details {
+  display: flex;
+  align-items: center;
+  width: 85%;
+  margin: 0 25%;
+}
+.rating-edit-dropdown {
+  height: 24px;
+  width: 35%;
+  margin: 6% 1%;
+  width: 35%;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+.rating-edit-button {
+  height: 24px;
+  width: 15%;
+}
