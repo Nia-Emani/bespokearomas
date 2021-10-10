@@ -40,23 +40,23 @@ export default function RatingCreate(props) {
       <h3 className="add-rating-subheading">
         Choose from 1 star to 5 stars, with one being the lowest.
       </h3>
-
-      {/* below is our form for the flavor drop down */}
-      <form onSubmit={handleSubmit}>
-        <select onChange={handleChange} defaultValue="default">
-          {/* the "defaultValue" on the <select> tag needs to match the "value" on our default <option> tag */}
-          {/* we also add the "disabled" in the <option> to prevent users from selecting it*/}
-          <option disabled value="default">
-            -- Select a Rating --
-          </option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-        </select>
-        <button>Submit</button>
-      </form>
+      <div className="add-rating-form-container">
+        <form className="add-rating-form" onSubmit={handleSubmit}>
+          <select onChange={handleChange} defaultValue="default">
+            {/* the "defaultValue" on the <select> tag needs to match the "value" on our default <option> tag */}
+            {/* we also add the "disabled" in the <option> to prevent users from selecting it*/}
+            <option disabled value="default">
+              -- Select a Rating --
+            </option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <button className="add-rating-button">Submit</button>
+        </form>
+      </div>
     </div>
   );
 }
