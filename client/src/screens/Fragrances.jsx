@@ -5,7 +5,10 @@ import "../css/Fragrances.css";
 export default function Fragrances(props) {
   return (
     <div>
-      <h3>Fragrances</h3>
+      <h3 className="fragrances-greeting1">
+        Some of the world's most luxurious fragrances...
+      </h3>
+      <h3 className="fragrances-greeting2">...rated by you!</h3>
       {props.fragrances.map((fragrance) => (
         <div>
           <img
