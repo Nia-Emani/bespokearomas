@@ -1,5 +1,6 @@
 import StarRatings from "react-star-ratings";
 import { Link } from "react-router-dom";
+import "../css/Fragrances.css";
 
 export default function Fragrances(props) {
   return (
