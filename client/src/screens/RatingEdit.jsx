@@ -1,16 +1,14 @@
 import { useState, useEffect } from "react";
-import { useParams, useHistory } from "react-router-dom";
-import { putRating, getOneRating } from "../services/ratings";
+import { useParams } from "react-router-dom";
+import { getOneRating } from "../services/ratings";
 import "../css/RatingEdit.css";
 
 export default function RatingEdit(props) {
   const [fragranceId, setFragranceId] = useState("");
-  // const [updatedRating, setUpdatedRating] = useState("");
   const [formData, setFormData] = useState({
     rank: "",
   });
   const { id } = useParams();
-  let history = useHistory();
 
   useEffect(() => {
     const fetchRating = async () => {
@@ -33,14 +31,6 @@ export default function RatingEdit(props) {
     }));
   };
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-
-  //   const newRating = await putRating(formData, id);
-  //   // setFragranceItem(fragranceItem);
-  //   history.push(`/fragrance-detail/${id}`);
-  // };
-
   return (
     <div>
       <form
@@ -48,8 +38,6 @@ export default function RatingEdit(props) {
           e.preventDefault();
           props.handleRatingEdit(formData, id, fragranceId);
         }}
-        //   props.handleRatingEdit(id, formData);
-        // }}
       >
         <h3>Edit rating</h3>
         <select
