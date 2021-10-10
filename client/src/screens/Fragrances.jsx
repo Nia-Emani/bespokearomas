@@ -12,11 +12,11 @@ export default function Fragrances(props) {
       <img
         className="underline"
         src="https://lh3.googleusercontent.com/B0wStKXtE_us57PsOUAUKbCj80GVZvTAYGGiKUmS77_meksGlVkojxTIoXIgniuK2kk9v1kE7nB_Ym8ao7N76EN08IAodQGUrOWXxP_o2lieoasnCCKnA7dopuAQGfedLFE9YRxFDWk=h80"
-        alt="underline for emphasis on luxurious"
+        alt="underline to emphasize luxurious"
       />
       <div className="fragrances-container">
         {props.fragrances.map((fragrance) => (
-          <div>
+          <div className="fragrances-cards">
             <img
               className="fragrances-image"
               key={fragrance.image_url}
