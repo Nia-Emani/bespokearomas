@@ -33,36 +33,30 @@ export default function Register(props) {
             props.handleRegister(formData);
           }}
         >
-          <label className="register-label">
-            Username
-            <input
-              className="register-input"
-              type="text"
-              name="username"
-              value={formData.username}
-              onChange={handleChange}
-            />
-          </label>
-          <label className="register-label">
-            Email
-            <input
-              className="register-input"
-              type="text"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-            />
-          </label>
-          <label className="register-label">
-            Password
-            <input
-              className="register-input"
-              type="password"
-              name="password"
-              value={formData.password}
-              onChange={handleChange}
-            />
-          </label>
+          <label className="register-label">Username</label>
+          <input
+            className="register-input"
+            type="text"
+            name="username"
+            value={formData.username}
+            onChange={handleChange}
+          />
+          <label className="register-label">Email</label>
+          <input
+            className="register-input"
+            type="text"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+          />
+          <label className="register-label">Password</label>
+          <input
+            className="register-input"
+            type="password"
+            name="password"
+            value={formData.password}
+            onChange={handleChange}
+          />
           <button className="register-button">Get Started</button>
         </form>
       </div>

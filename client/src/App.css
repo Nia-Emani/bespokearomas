@@ -23,3 +23,7 @@ button {
   border-radius: 2px;
   border-radius: 2px;
 }
+input {
+  border: 2px inset #b69b9b;
+  box-shadow: inset 0px 4px 4px #b69b9b;
+}

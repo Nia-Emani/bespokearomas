@@ -1,9 +1,9 @@
 .register-card {
   display: flex;
-  margin: 3% 20%;
-  box-shadow: 0px 0px 3px 1px #cecece;
-  width: 60%;
-  height: 600px;
+  margin: 3% 26%;
+  box-shadow: 0px 0px 10px 5px #cecece;
+  width: 48%;
+  height: 500px;
 }
 .register-image {
   width: 40%;
@@ -18,11 +18,27 @@
 .register-greeting {
   font-family: "Mrs Saint Delafield", sans-serif;
   font-size: 50px;
+  font-weight: 100;
   margin: 0;
 }
 .register-form {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 60%;
+  justify-content: flex-start;
+  height: 67%;
+  align-items: flex-start;
+}
+.register-label {
+  margin-bottom: 2%;
+}
+.register-input {
+  height: 8%;
+  width: 100%;
+  margin-bottom: 8%;
+}
+.register-button {
+  height: 12%;
+  width: 55%;
+  margin: 0 25%;
+  font-size: 16px;
 }
