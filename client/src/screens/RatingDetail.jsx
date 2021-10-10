@@ -29,6 +29,7 @@ export default function RatingDetail(props) {
   return (
     <div className="rating-detail">
       <img className="rating-detail-image" src={fragranceInfo.image_url} />
+
       <p className="rating-detail-name">{fragranceInfo.name}</p>
       {fragranceInfo.ratings.map((rating) => (
         <div className="existing-rating">
@@ -37,15 +38,17 @@ export default function RatingDetail(props) {
             starDimension="40px"
             starSpacing="15px"
           />
-          <button className="rating-detail-edit-button">
-            <Link to={`/ratings/${rating.id}/edit`}>Edit Rating</Link>
-          </button>
-          <button
-            className="delete-button"
-            onClick={() => props.handleRatingDelete(rating.id)}
-          >
-            Delete Rating
-          </button>
+          <div className="rating-detail-buttons">
+            <button className="rating-detail-edit-button">
+              <Link to={`/ratings/${rating.id}/edit`}>Edit Rating</Link>
+            </button>
+            <button
+              className="delete-button"
+              onClick={() => props.handleRatingDelete(rating.id)}
+            >
+              Delete Rating
+            </button>
+          </div>
         </div>
       ))}
     </div>
