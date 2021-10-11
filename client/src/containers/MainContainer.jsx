@@ -1,12 +1,7 @@
 import { useState, useEffect } from "react";
 import { Switch, Route, useHistory } from "react-router-dom";
 
-import {
-  getAllRatings,
-  postRating,
-  deleteRating,
-  putRating,
-} from "../services/ratings";
+import { deleteRating, putRating } from "../services/ratings";
 import { getAllFragrances } from "../services/fragrances";
 import Home from "../screens/Home";
 import Fragrances from "../screens/Fragrances";
@@ -19,14 +14,6 @@ export default function MainContainer() {
   const [fragrances, setFragrances] = useState([]);
   const history = useHistory();
 
-  // useEffect(() => {
-  //   const fetchRatings = async () => {
-  //     const ratingList = await getAllRatings();
-  //     setRatings(ratingList);
-  //   };
-  //   fetchRatings();
-  // }, []);
-
   useEffect(() => {
     const fetchFragrances = async () => {
       const fragranceList = await getAllFragrances();
@@ -34,12 +21,6 @@ export default function MainContainer() {
     };
     fetchFragrances();
   }, [toggle]);
-
-  // const handleRatingCreate = async (ratingData) => {
-  //   const newRating = await postRating(ratingData);
-  //   setRatings((prevState) => [...prevState, newRating]);
-  //   history.push("/ratings");
-  // };
 
   const handleRatingEdit = async (ratingData, id, fragId) => {
     await putRating(ratingData, id);
