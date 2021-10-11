@@ -53,6 +53,9 @@
   header {
     margin-bottom: 3%;
   }
+  .user {
+    font-size: 14px;
+  }
   .register-nav-link {
     padding: 0 10% 0 0;
   }

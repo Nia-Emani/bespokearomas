@@ -70,4 +70,12 @@
   .home-card-name {
     font-size: 14px;
   }
+  .call-to-action {
+    font-size: 40px;
+  }
+  .call-to-action-button {
+    font-size: 17px;
+    height: 42px;
+    width: 125px;
+  }
 }
