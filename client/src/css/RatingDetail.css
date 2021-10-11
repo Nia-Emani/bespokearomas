@@ -25,3 +25,10 @@
   height: 26px;
   width: 42%;
 }
+
+@media (max-width: 500px) {
+  .rating-detail {
+    width: 86%;
+    margin: 25% 5%;
+  }
+}
