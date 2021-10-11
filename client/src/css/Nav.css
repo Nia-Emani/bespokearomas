@@ -6,20 +6,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 5;
 }
 .logo-container {
   width: 75%;
 }
 .logo {
-  padding: 1% 0 1% 35%;
+  padding: 1% 0 1% 38%;
 }
-/* .auth-links-container {
-  text-align: right;
-  padding: 0px 5% 0 30%;
-} */
 .auth-links-container-user {
   text-align: right;
   padding: 0px 5% 0 19%;
+  width: 25%;
 }
 .auth-links-container-nouser {
   text-align: right;
@@ -33,7 +31,7 @@
 }
 .user p,
 .user a,
-.user button {
+.logout-button {
   padding: 0 7px;
 }
 .register-nav-link {
@@ -41,33 +39,21 @@
 }
 
 @media (max-width: 500px) {
+  .nav {
+    flex-direction: column;
+  }
+  .logo-container {
+    width: auto;
+  }
   .logo {
     width: 200px;
     display: flex;
-    margin: 0 61%;
+    padding: 3% 0;
   }
-  .auth-links-container {
-    text-align: right;
-    padding: 0px 5% 0 22%;
-    width: 100%;
-    font-size: 11px;
-    display: flex;
-    justify-content: flex-end;
+  header {
+    margin-bottom: 3%;
   }
   .register-nav-link {
     padding: 0 10% 0 0;
   }
-
-  /* nav links div
-  display: flex;
-    justify-content: space-evenly;
-    align-items: center; 
-    
-    
-  each nav link
-      padding: 0 7px;
-      
-  auth links contaainer
-      padding: 0px 5% 0 19%;
-}*/
 }

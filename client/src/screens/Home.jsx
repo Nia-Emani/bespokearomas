@@ -49,7 +49,7 @@ export default function Home() {
       </div>
       <div className="call-to-action-section">
         <h2 className="call-to-action">
-          Help shoppers like you by rating your favorite luxury fragrances!
+          Help shoppers by rating your favorite luxury fragrances!
         </h2>
         <button className="call-to-action-button">
           <Link to="/register">Get Started</Link>

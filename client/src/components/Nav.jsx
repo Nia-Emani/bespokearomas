@@ -24,7 +24,9 @@ export default function Nav(props) {
           <div className="user">
             <p>{props.currentUser.username}</p>
             <Link to="/fragrances">All Fragrances</Link>
-            <button onClick={props.handleLogout}>Logout</button>
+            <button className="logout-button" onClick={props.handleLogout}>
+              Logout
+            </button>
           </div>
         ) : (
           <div>

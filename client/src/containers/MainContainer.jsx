@@ -56,7 +56,7 @@ export default function MainContainer() {
   return (
     <Switch>
       <Route path="/fragrance-detail/:id">
-        <RatingDetail toggle={toggle} handleRatingDelete={handleRatingDelete}/>
+        <RatingDetail toggle={toggle} handleRatingDelete={handleRatingDelete} />
       </Route>
       <Route path="/fragrances">
         <Fragrances fragrances={fragrances} />
@@ -67,9 +67,6 @@ export default function MainContainer() {
       <Route path="/ratings/:id/edit">
         <RatingEdit handleRatingEdit={handleRatingEdit} />
       </Route>
-      {/* <Route path="/ratings">
-        <Ratings ratings={ratings} handleRatingDelete={handleRatingDelete} />
-      </Route> */}
       <Route path="/">
         <Home />
       </Route>
