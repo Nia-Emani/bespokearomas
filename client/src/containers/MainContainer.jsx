@@ -13,7 +13,6 @@ import Fragrances from "../screens/Fragrances";
 import RatingDetail from "../screens/RatingDetail";
 import RatingCreate from "../screens/RatingCreate";
 import RatingEdit from "../screens/RatingEdit";
-// import ratings from "../screens/Ratings";
 
 export default function MainContainer() {
   const [toggle, setToggle] = useState(false);

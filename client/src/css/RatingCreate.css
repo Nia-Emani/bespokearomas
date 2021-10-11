@@ -22,3 +22,20 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
 }
+
+@media (max-width: 500px) {
+  .add-rating {
+    width: 86%;
+    margin: 30% 5% 33%;
+  }
+  .add-rating-heading {
+    font-size: 53px;
+    margin: 18% 0 0;
+  }
+  .add-rating-subheading {
+    font-size: 15px;
+  }
+  .add-rating-dropdown {
+    width: 41%;
+  }
+}

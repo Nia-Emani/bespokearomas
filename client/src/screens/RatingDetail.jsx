@@ -36,8 +36,9 @@ export default function RatingDetail(props) {
         <div className="existing-rating-info">
           <StarRatings
             rating={Number(rating.rank)}
-            starDimension="40px"
-            starSpacing="15px"
+            starDimension="30px"
+            starSpacing="6px"
+            starRatedColor="rgb(225, 185, 93)"
           />
           <div className="rating-detail-buttons">
             <button className="rating-detail-button">

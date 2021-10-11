@@ -42,3 +42,21 @@
   margin: 0 25%;
   font-size: 16px;
 }
+
+@media (max-width: 500px) {
+  .register-card {
+    width: 92%;
+    margin: 30% 5% 33%;
+    height: 350px;
+  }
+  .register-greeting {
+    font-size: 29px;
+    line-height: 1;
+    margin-top: 10%;
+  }
+  .register-button {
+    width: 58%;
+    margin: 0px 23%;
+    font-size: 13px;
+  }
+}

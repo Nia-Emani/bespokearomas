@@ -16,12 +16,12 @@
 }
 .auth-links-container-user {
   text-align: right;
-  padding: 0px 5% 0 19%;
+  padding-right: 3%;
   width: 25%;
 }
 .auth-links-container-nouser {
   text-align: right;
-  padding: 0px 5% 0 30%;
+  padding-right: 3%;
   width: 25%;
 }
 .user {
@@ -58,5 +58,13 @@
   }
   .register-nav-link {
     padding: 0 10% 0 0;
+  }
+}
+@media (max-width: 1024px) {
+  .auth-links-container-user {
+    font-size: 14px;
+  }
+  .hero-image {
+    width: 100%;
   }
 }

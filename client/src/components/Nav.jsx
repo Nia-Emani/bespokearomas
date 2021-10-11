@@ -16,8 +16,8 @@ export default function Nav(props) {
       <header
         className={
           props.currentUser
-            ? ".auth-links-container-user"
-            : ".auth-links-container-nouser"
+            ? "auth-links-container-user"
+            : "auth-links-container-nouser"
         }
       >
         {props.currentUser ? (
