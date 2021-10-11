@@ -32,3 +32,17 @@
   height: 24px;
   width: 15%;
 }
+
+@media (max-width: 500px) {
+  .rating-edit {
+    width: 86%;
+    margin: 30% 5% 35%;
+  }
+  .rating-edit-heading {
+    font-size: 46px;
+    margin: 14% 0 7%;
+  }
+  .rating-edit-button {
+    width: 20%;
+  }
+}
